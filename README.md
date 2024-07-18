@@ -11,22 +11,6 @@ El **Library management system** es una aplicaction Java diseñada para gestiona
 - **Devoluciones de Libros:** Procesar devoluciones de libros y calcular multas.
 - **Multas de Usuarios:** Calcular y visualizar las multas acumuladas por los usuarios.
 
-  1. **Clonar el Repositorio:**
-    ```bash
-    git clone https://github.com/tuusuario/turepositorio.git
-    cd turepositorio
-    ```
-
-2. **Compilar el Proyecto:**
-    ```bash
-    javac -d bin -sourcepath src src/com/mycompany/library/*.java
-    ```
-
-3. **Ejecutar la Aplicación:**
-    ```bash
-    java -cp bin com.mycompany.library.LibraryManagement
-    ```
-
 ## Uso
 1. **Añadir una Sucursal:**
     - Selecciona la opción 1 en el menú.
