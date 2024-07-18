@@ -1,10 +1,10 @@
 package com.mycompany.library;
 
 /**
- * Represents a generic element in the library. This is an abstract class that
+ * Represents a generic element in the library. This class
  * provides common properties for library elements.
  */
-public abstract class Element {
+public class Element {
 
     private String ID;
     private String name;
