@@ -30,7 +30,7 @@ public class LibraryManagement {
      */
     private void run() {
         int option = 0;
-        while (option != 8) {
+        while (option != 10) {
             showMenu();
             try {
                 option = scanner.nextInt();
@@ -56,9 +56,11 @@ public class LibraryManagement {
         System.out.println("3. Add an User");
         System.out.println("4. Lend a Book");
         System.out.println("5. Return a Book");
-        System.out.println("6. Get debts");
-        System.out.println("7. View loans");
-        System.out.println("8. Exit");
+        System.out.println("6. Get Debts");
+        System.out.println("7. View Loans");
+        System.out.println("8. List Branches");
+        System.out.println("9. List Users");
+        System.out.println("10. Exit");
         System.out.print("Please, select an option: ");
     }
 
@@ -84,6 +86,10 @@ public class LibraryManagement {
             case 7 ->
                 viewLoans();
             case 8 ->
+                listBranches();
+            case 9 ->
+                listUsers();
+            case 10 ->
                 System.out.println("Exiting the system...");
             default ->
                 System.out.println("Invalid option, please try again.");
@@ -109,6 +115,28 @@ public class LibraryManagement {
             library.addBranch(branch);
         }
         System.out.println("*****All good!!*****");
+    }
+
+    /**
+     * Lists all branches in the library if any exist.
+     */
+    private void listBranches() {
+        if (!hasBranches()) {
+            return;
+        }
+        System.out.println("*******Getting branches*************");
+        System.out.println(library.toStringBranches());
+    }
+
+    /**
+     * Lists all users in the library if any exist.
+     */
+    private void listUsers() {
+        if (!hasUsers()) {
+            return;
+        }
+        System.out.println("*******Getting users*************");
+        System.out.println(library.toStringUsers());
     }
 
     /**
