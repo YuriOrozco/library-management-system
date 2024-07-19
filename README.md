@@ -12,6 +12,7 @@ El **Library management system** es una aplicaction Java diseñada para gestiona
 - **Multas de Usuarios:** Calcular y visualizar las multas acumuladas por los usuarios.
 
 ## Uso
+**Este proyecto funciona desde consola
 1. **Añadir una Sucursal:**
     - Selecciona la opción 1 en el menú.
     - Introduce los detalles de la sucursal.
